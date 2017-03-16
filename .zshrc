@@ -53,20 +53,26 @@ plugins=(git brew django virtualenvwrapper)
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
+POWERLEVEL9K_MODE='awesome-patched' # needs to be before theme setting
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # ----------------------------------------------------------------------
 # Oh-my-zsh theme settings
 # ----------------------------------------------------------------------
 DEFAULT_USER=$USER
-POWERLEVEL9K_MODE='awesome-patched'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time virtualenv)
-POWERLEVEL9K_OS_ICON_BACKGROUND="white"
-POWERLEVEL9K_OS_ICON_FOREGROUND="blue"
-POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
+POWERLEVEL9K_OS_ICON_BACKGROUND='white'
+POWERLEVEL9K_OS_ICON_FOREGROUND='004' # dark blue
+POWERLEVEL9K_HOME_ICON=''
+POWERLEVEL9K_HOME_SUB_ICON=''
+POWERLEVEL9K_FOLDER_ICON=''
+POWERLEVEL9K_DIR_HOME_BACKGROUND='004' # dark blue
+POWERLEVEL9K_DIR_HOME_FOREGROUND='white'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='004' # dark blue
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='white'
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='004' # dark blue
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='white'
 
 # User configuration
 
