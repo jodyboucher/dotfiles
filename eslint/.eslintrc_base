@@ -1,0 +1,41 @@
+{
+  "root": true,
+
+  // airbnb-base includes all core ESLint rules, including ECMAScript 6+
+  //             excludes React rules
+  "extends": "airbnb-base",
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true
+  },
+
+  "rules": {
+    // enforce consistent brace style for all control statements
+    // http://eslint.org/docs/rules/curly
+    // change -> option from 'multi-line' to 'all'
+    "curly": ["error", "all"],
+
+    // enforce a maximum line length
+    // http://eslint.org/docs/rules/max-len
+    // change -> increase maximum length from 100 to 120
+    "max-len": ["error", 120, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+
+    // Forbid the use of extraneous packages
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    // change -> remove devDependencies globs array, allow all devDependencies
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
+  }
+}
