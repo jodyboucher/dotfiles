@@ -83,7 +83,6 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
-
 # ----------------------------------------------------------------------
 # Python development
 # ----------------------------------------------------------------------
@@ -91,6 +90,10 @@ source $ZSH/oh-my-zsh.sh
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Project
 source /usr/local/bin/virtualenvwrapper.sh
+
+# ADD Python 3.6 user base directory to PATH.
+# this is the location of user installed packages (i.e. pipenv, etc)
+export PATH="$PATH:/Users/jodyboucher/Library/Python/3.6/bin"
 
 # ----------------------------------------------------------------------
 # PHP development
